@@ -3,38 +3,22 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
       package="com.waitingfy.callhelper"
 >
-<uses-sdk android:minSdkVersion="18"
-    />
-
-<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
-        <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"></uses-permission> 
-        
-<application 
+	<uses-sdk 
+	    android:minSdkVersion="16"
+	    android:targetSdkVersion="18"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"></uses-permission> 
+	<application 
         android:icon="@drawable/icon" 
         android:label="@string/app_name" >
-        <activity android:name=".TestNum"
-            	 android:theme="@android:style/Theme.Holo.Wallpaper.NoTitleBar"
-                  android:label="@string/app_name">
-            
+        <activity 
+            android:name=".TestNum"
+            android:theme="@android:style/Theme.Holo.Wallpaper.NoTitleBar"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            
-            
         </activity>
-        
-<receiver android:name=".PhoneStatReceiver">  
-            <intent-filter>
-                 <action android:name="android.intent.action.PHONE_STATE"/>           
-                 <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
-            </intent-filter>
-</receiver>
-
-
     </application>
-
-
-    
-
 </manifest>
