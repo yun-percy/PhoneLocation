@@ -13,5 +13,3 @@ http://www.waitingfy.com/archives/549
 + 图片：
 
 ![screenshot](./Screenshot_2014-10-17-17-05-46.png "七位自动查询")
-
-+ 新增自定义Framelayout，获取归属地方式，详见 new_view里面的DEMO
