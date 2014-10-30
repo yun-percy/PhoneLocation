@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.waitingfy.callhelper.yun_location xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-
- 
-        <com.waitingfy.callhelper.yun_location_display
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-       
-            </com.waitingfy.callhelper.yun_location_display>
-</RelativeLayout>
+    <EditText 
+        android:id="@+id/edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:numeric="integer"
+        android:layout_centerInParent="true"
+        />
+    <TextView 
+        android:id="@+id/txtResult"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:padding="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        />
+        <TextView 
+        android:id="@+id/incall"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:padding="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtResult"
+        />
+</com.waitingfy.callhelper.yun_location>
